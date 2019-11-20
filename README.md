@@ -8,26 +8,23 @@ The device consists of control box and stimulus box.
 Control box is arduino based.
 ![Inside control Box](photo/ControlBox_1.jpg)
 
-
 Arduino Leonardo was used to provide at least 3 PWM channels with 10-bit resolution.
 
 Power supply is DC 12V 2A.
 
 Three encoders were connected to arduino with common bus method (https://github.com/j-bellavance/CommonBusEncoders).
 
-LCD display is 2004 with I2C interface.
-
-DC-DC convertor from 12V to 5V was ised for display backlight.
+LCD display is 2004 with I2C interface. DC-DC convertor from 12V to 5V was used for display backlight.
 
 Output bi-polar NPN old soviet KT961Б transistors (but one can use MOSFET) are mounted on "power pcb".
 
-Wiring of parts to Leonardo can be seen from source code.
+Wiring of parts to Leonardo can be seen from software source code.
 
-Software for control box is in /src folder.
+Software sources for control box are in /src folder.
 
-![as.ino](src/as.ino) scetch provides alternation of RG mixture field and A (Amber == Yellow) field with interval of 1.5 sec.
+![as.ino](src/as.ino) sketch provides alternation of RG mixture field and A (Amber == Yellow) field with interval of 1.5 sec.
 
-![dimmer.ino](src/dimmer.ino) scetch provides static fields presentation for spectral measurements.
+![dimmer.ino](src/dimmer.ino) sketch provides static fields presentation for spectral measurements.
 
 PCBs were developed with [Fritzing](https://fritzing.org). Fritzing files and PCB images are in /pcb folder.
 
@@ -46,7 +43,7 @@ Spectral measurements were done with X-Rite Eye One spectrophotometer in hi-res 
 Peak inensities of leds are: R - 620 nm, G - 520 nm, A - 590 nm.
 
 To eliminate blue cone excitation it is nessesary to use green light > 540 nm.
-As there are no commercially available green leds with peak lambda of 550 nm, we
+As there are no commercially available bright green leds with peak wavelength of 550 nm, we
 filter out radiation less than 540 nm with yellow plastic plate.
 We succeeded to select suitable opale acrylic yellow plate among many samples.
 
@@ -56,7 +53,7 @@ The plate was mounted on the back side of stimulus box cover.
 
 Another white opale plastic plate was mounted on PCB above leds.
 
-Such construction provides good uniformity of field lights.
+Such construction provides good uniformity of fields.
 
 Stimulus box was equipped with exchangeable white diaphragms with 2, 3 or 4 cm circular windows.
 
