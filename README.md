@@ -21,20 +21,19 @@ DC-DC convertor from 12V to 5V was ised for display backlight.
 
 Software for control box is in /src folder.
 
-Software provides alternation of RG mixture field and A (Amber == Yellow) field with interval of 1.5 sec.
+![as.ino](src/as.ino) scetch provides alternation of RG mixture field and A (Amber == Yellow) field with interval of 1.5 sec.
 
-For spectral measurements there is src/dimmer.ino scetch with static fields presentation.
+![dimmer.ino](src/dimmer.ino) scetch provides static fields presentation for spectral measurements.
 
-PCB were developed with [Fritzing](https://fritzing.org) .
+PCBs were developed with [Fritzing](https://fritzing.org). Fritzing files and PCB images are in /pcb folder.
 
-Fritzing files and images are in /pcb folder.
-
-PCBs were made with LUT technology (laser printer + iron).
+One-sided PCBs were made with LUT technology (laser printer + iron).
 
 Stimulus box is black cartoon box of 14X14X5 cm.
 ![Stimulus box](photo/StimulusBox_1.jpg)
 
-For RG field 12V RGB led strip was used with 5050 smd leds, 60 per meter, 14W power (Arlight).
+For RG field 12V RGB led strip was used with 5050 smd leds, 60 per meter, 14W/m power ([Arlight](https://arlight.ru)),
+but one can use analogoues strips.
 
 Spectral measurements were done with X-Rite Eye One spectrophotometer in hi-res mode.
 
